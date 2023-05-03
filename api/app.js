@@ -19,6 +19,11 @@ app.get('/', (req, res) => {
 );
 
 
+app.get("/saludo", (req, res) => {
+    res.status(200).send("Hola Buenas");
+});
+
+
 
 app.listen(3000, () => {
 
