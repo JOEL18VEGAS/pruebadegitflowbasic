@@ -19,6 +19,17 @@ app.get('/', (req, res) => {
 );
 
 
+app.get("/saludo", (req, res) => {
+    try {
+        res.status(200).send("Hola Buenas");
+    } catch (error) {
+        res.status(400).json({
+            "Error": error.message
+        })
+    }
+});
+
+
 
 app.listen(3000, () => {
 
